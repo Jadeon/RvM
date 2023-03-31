@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-16"?>
+<XMLHandler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ledger>Player 1 Army</Ledger>
+  <Armies>
+    <Army>
+      <Units>
+        <Unit>
+          <UnitName>Swordsman</UnitName>
+          <UnitID>1</UnitID>
+          <FlavorText>Has a sword</FlavorText>
+          <ImageFile>..\..\..\images\swordsman.png</ImageFile>
+          <ActiveImageFile>..\..\..\images\swordsman_Active.png</ActiveImageFile>
+          <Type>human</Type>
+          <Range>1</Range>
+          <HP>8</HP>
+          <Accuracy>1</Accuracy>
+          <ArmorClass>2</ArmorClass>
+          <Speed>2</Speed>
+          <Command>2</Command>
+          <Position>
+            <int>-1</int>
+            <int>-1</int>
+          </Position>
+          <Abilities>
+            <Ability>
+              <Name>Slash</Name>
+              <Tooltip>Target Unit within 1 tile(s) takes 5 damage, this ability gets +2 to evasion, +2 to mitigation, and has a cooldown of 2 turns.</Tooltip>
+              <Range>3</Range>
+              <EVMod>2</EVMod>
+              <MITMod>2</MITMod>
+              <Cooldown>2</Cooldown>
+              <Costs />
+              <Targets>
+                <Unit>
+                  <UnitName>NON_UNIT</UnitName>
+                  <FlavorText>this unit is not initialized</FlavorText>
+                  <ImageFile>..\..\..\images\swordsman.jpeg</ImageFile>
+                  <Type>nonunit</Type>
+                  <Range>0</Range>
+                  <HP>1</HP>
+                  <Accuracy>0</Accuracy>
+                  <ArmorClass>0</ArmorClass>
+                  <Speed>0</Speed>
+                  <Command>0</Command>
+                  <Position />
+                  <Abilities />
+                  <Effects />
+                  <Alive>uninitialized</Alive>
+                </Unit>
+              </Targets>
+              <Outcomes>
+                <Outcome>
+                  <OutcomeType>damage</OutcomeType>
+                  <Prob>1</Prob>
+                  <Mag>5</Mag>
+                </Outcome>
+              </Outcomes>
+            </Ability>
+          </Abilities>
+          <Effects />
+          <Alive>uninitialized</Alive>
+        </Unit>
+      </Units>
+    </Army>
+  </Armies>
+</XMLHandler>
